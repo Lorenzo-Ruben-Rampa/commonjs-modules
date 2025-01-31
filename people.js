@@ -4,16 +4,17 @@ console.log(firstFunction);
 
 // Importo la seconda funzione 
 const secondFunction = require('./hobbies');
-const Identificativo = require('./names');
 console.log(secondFunction);
 
 // Creo la nuova funzione 
 function thirdFunction () {
+    let primaFunzione = firstFunction('Lorenzo','Rampa')
+    let secondaFunzione = secondFunction('subacquea', 'calcio', 'nuoto')
     return {
-        fullName: firstFunction.firstName + firstFunction.lastName,
-        hobbies: secondFunction.hobbyOne + secondFunction.hobbyTwo + secondFunction.hobbyThree
+        fullName: primaFunzione.firstName + ' ' + primaFunzione.lastName,
+        hobbies: secondaFunzione
     }
 }
-const risultato = thirdFunction(fullName, hobbies);
+const risultato = thirdFunction();
 console.log(risultato);
 

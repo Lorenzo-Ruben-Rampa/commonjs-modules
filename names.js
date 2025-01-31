@@ -1,10 +1,10 @@
 // Creo la funzione
-function Identificativo(firstName, lastName) {
+function firstFunction(firstName, lastName) {
     return {
-        firstName: Lorenzo,
-        lastName: Rampa
+        firstName: firstName,
+        lastName: lastName
     };
 }
 
 // Esporto la funzione
-module.exports = Identificativo;
+module.exports = firstFunction;
