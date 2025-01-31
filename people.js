@@ -13,6 +13,7 @@ function thirdFunction () {
         fullName: firstFunction.firstName + firstFunction.lastName,
         hobbies: secondFunction.hobbyOne + secondFunction.hobbyTwo + secondFunction.hobbyThree
     }
-    console.log(thirdFunction);
 }
+const risultato = thirdFunction(fullName, hobbies);
+console.log(risultato);
 
