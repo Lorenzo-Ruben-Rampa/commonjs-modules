@@ -1,7 +1,7 @@
 // Creo la funzione
-function Hobbies (stringhe) {
+function hobbies (stringhe) {
     return ['hobbyOne', 'hobbyTwo', 'hobbyThree']
 }
 
 // Esporto la funzione 
-module.exports = Hobbies;
+module.exports = hobbies;
